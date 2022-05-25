@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-  const handleClickButton = () => {
+  const handleClickButton = (e) => {
+    e.preventDefault();
     navigate("/question");
   };
   return (
@@ -20,7 +21,7 @@ const Home = () => {
             나에게 맞는 주인님은??
           </p>
           <img
-            className="w-100 h-100 rounded-full mt-10 ml-20 "
+            className="w-100 h-100 rounded-full mt-10 ml-[110pt] "
             src={photo338}
             alt=""
             width="384"

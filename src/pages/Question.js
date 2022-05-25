@@ -16,7 +16,7 @@ function Question() {
 
   const progressPercentage = (questionNo / QuestionData.length) * 100;
 
-  const handleClickButton = (no, type) => {
+  const handleClickButton = (no, type ) => {
     const newScore = totalScore.map((e) =>
       e.id === type ? { id: e.id, score: e.score + no } : e
     );
